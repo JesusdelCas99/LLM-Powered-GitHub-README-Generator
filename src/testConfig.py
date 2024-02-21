@@ -1,9 +1,5 @@
-import requests, subprocess, os
+import requests, subprocess
 
-
-
-# Set PYTHONDONTWRITEBYTECODE to prevent generation of __pycache__ directories
-os.environ['PYTHONDONTWRITEBYTECODE'] = '1'
 
 
 # Verify GitHub token
