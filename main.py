@@ -3,14 +3,12 @@ from langchain.chains import LLMChain
 from langchain_community.llms import Ollama
 import requests, base64
 
-from config import repository, excluded_files, excluded_folders, access_token, model
-from tokenInfo import check_rate_limit, time_until_reset
-from test import *
-import os, sys
-
-
+from src.infoToken import check_rate_limit, time_until_reset
+from src.testConfig import *
+import os, sys, configparser
 import requests
 import base64
+
 
 def combine_files_content_recursive(repository, excluded_files, excluded_folders, access_token):
     """
@@ -58,7 +56,6 @@ def combine_files_content_recursive(repository, excluded_files, excluded_folders
 
 
 
-
 def save_content(data, files, output):
     """
     Save repository content, list of files, and output text to separate text files.
@@ -85,8 +82,19 @@ def save_content(data, files, output):
 
 
 
-
 if __name__ == "__main__":
+
+    # Create a ConfigParser object and read the config.cfg file
+    config = configparser.ConfigParser()
+    config.read('config.cfg')
+
+    # Access configuration values
+    access_token = config['github']['access_token']
+    repository = config['github']['repository']
+    model = config['github']['model']
+    excluded_files = config['excluded']['files'].split(',')
+    excluded_folders = config['excluded']['folders'].split(',')
+
 
     # Check if access_token, repository, and model are empty
     if not access_token:

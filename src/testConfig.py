@@ -1,4 +1,9 @@
-import requests, subprocess
+import requests, subprocess, os
+
+
+
+# Set PYTHONDONTWRITEBYTECODE to prevent generation of __pycache__ directories
+os.environ['PYTHONDONTWRITEBYTECODE'] = '1'
 
 
 # Verify GitHub token
@@ -11,13 +16,17 @@ def is_valid_token(token):
         return True
     else:
         return False
-    
+
+
+
 def repo_exists(repository):
     response = requests.get(f'https://api.github.com/repos/{repository}')
     if response.status_code == 200:
         return True
     else:
         return False
+
+
 
 def model_exists(model):
     try:

@@ -1,4 +1,5 @@
 .github/workflows/deployment.yml
+README.md
 data/ldif/organization.ldif
 data/ldif/users.ldif
 docker-compose.yml
