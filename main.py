@@ -6,8 +6,7 @@ import requests, base64
 from src.infoToken import check_rate_limit, time_until_reset
 from src.testConfig import *
 import os, sys, configparser
-import requests
-import base64
+
 
 
 def combine_files_content_recursive(repository, excluded_files, excluded_folders, access_token):
