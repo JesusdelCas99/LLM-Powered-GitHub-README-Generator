@@ -1,0 +1,9 @@
+.github/workflows/deployment.yml
+data/ldif/organization.ldif
+data/ldif/users.ldif
+docker-compose.yml
+env/mariadb/mariadb.env
+env/openldap/openldap.env
+env/owncloud/owncloud.env
+env/phpldapadmin/phpldapadmin.env
+init.sh
