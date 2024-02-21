@@ -94,9 +94,9 @@ if __name__ == "__main__":
     model = config['github']['model']
     excluded_files = config['excluded']['files'].split(',')
     excluded_folders = config['excluded']['folders'].split(',')
+    template = config['prompt']['prompt_template']
 
-
-    # Check if access_token, repository, and model are empty
+    # Check if access_token, repository, prompt_template and model are empty
     if not access_token:
         print("\033[91mError: Please fill in your Personal Access Token in the config.py file.\033[0m")
         sys.exit()
@@ -107,6 +107,10 @@ if __name__ == "__main__":
 
     if not model:
         print("\033[91mError: Please specify the Ollama model to use in the config.py file.\033[0m")
+        sys.exit()
+
+    if not template:
+        print("\033[91mError: Please specify prompt template.\033[0m")
         sys.exit()
 
    
@@ -125,10 +129,10 @@ if __name__ == "__main__":
         print("\033[91mError: Model name not valid or not installed.\033[0m")
         sys.exit()
 
+    if not '{data}' in template:
+        print("\033[91mError: Please specify a valid prompt template as found in the GitHub repository.\033[0m")
+        sys.exit()
 
-    # Template for prompting
-    template = """{question}
-    Repository content: {data}"""
 
     print("\033[94mInfo: Reading repository content...\033[0m")
 
@@ -147,12 +151,13 @@ if __name__ == "__main__":
     llm = Ollama(base_url='http://localhost:11434', model=model)
     
     # Initialize LLMChain
-    prompt = PromptTemplate(template = template, input_variables = ["question", "data"])
+    prompt = PromptTemplate(template = template, input_variables = ["data"])
     llm_chain = LLMChain(llm = llm, prompt = prompt)
 
+    print("\033[94mInfo: Generating output README from GitHub repository...\033[0m")
+
     # Run LLMChain with data from the template
-    question = "Write README.md for GitHub using Markdown based on this repository content"
-    output = llm_chain.invoke({"question": question, "data": data})
+    output = llm_chain.invoke({"data": data})
 
     # Save content fo files
     save_content(data, files, output)
