@@ -3,7 +3,7 @@ from langchain.chains import LLMChain
 from langchain_community.llms import Ollama
 import requests, base64
 
-from src.infoToken import check_rate_limit, time_until_reset
+from src.infoToken import *
 from src.testConfig import *
 import os, sys, configparser
 
