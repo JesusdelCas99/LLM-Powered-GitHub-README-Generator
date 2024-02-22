@@ -2,7 +2,7 @@
  Craft Compelling READMEs: AI-Powered README Generator (Ollama LLM Platform)
 
 
-### ### Initial Setup and Configuration
+### Setup and Configuration
 
 1. **Install Ollama**
 
@@ -47,7 +47,7 @@
    - `prompt_template`: The template for the prompt to be used for generating README content. Ensure it contains `{data}` to represent the repository content.
 
 
-## Acknowledgments
+### Acknowledgments
 
 This project utilizes the following libraries and tools:
 
