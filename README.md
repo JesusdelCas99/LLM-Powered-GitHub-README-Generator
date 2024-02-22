@@ -35,7 +35,7 @@
 
 4. **Configuration**
 
-   Customize `config.cfg` file according to your requirements. Specify the GitHub repository, access token, model (Ollama model), excluded files, excluded folders, and other parameters.
+   Customize `config.cfg` file according to your requirements. Specify the GitHub repository, access token, model, excluded files, excluded folders, and other parameters.
 
    In the `config.cfg` file, you can specify the following parameters:
    
