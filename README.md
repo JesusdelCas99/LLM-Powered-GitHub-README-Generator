@@ -2,7 +2,7 @@
  Craft Compelling READMEs: AI-Powered README Generator (Ollama LLM Platform)
 
 
-### Setup and Configuration <!-- -->
+## Setup and Configuration <!-- -->
 
 1. **Install Ollama**
 
