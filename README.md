@@ -18,12 +18,11 @@
      conda env create -f environment.yml
      conda activate dapt
      ```
-
-2. ** Generate GitHub Personal Access Token based on GitHub repository**
+2. **Generate GitHub Personal Access Token based on GitHub repository**
 
 Generate a personal access token on GitHub with the necessary permissions (`contents:read`) and update the `config.cfg` file with your access token.
 
-3. ** Customize the config.cfg file**
+3. **Customize `config.cfg file`**
 
 Customize  `config.cfg` file according to your requirements. Be sure to provide the following parameters at least: `repository` (GitHub repository), `access_token` (Personal Access Token), `model` (Ollama model) and `prompt_template` (prompt template for LLM). Optionally, parameters such as `folders` (excluded folders) and `files` (excluded files) can be specified based on specific needs.
 
