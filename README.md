@@ -12,7 +12,7 @@
      ollama pull <model>
      ```
 
-     Replace `<model>` with the name of the Ollama model you want to use from the Ollama model library (https://ollama.com/library) and update `config.cfg` file to include it.
+     Replace `<model>` with the name of the Ollama model you want to use from the Ollama model library (https://ollama.com/library).
    
 3. **Install Dependencies**
 
