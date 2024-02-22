@@ -14,7 +14,7 @@
 
      Replace `<model>` with the name of the Ollama model you want to use from the [Ollama model library](https://ollama.com/library).
    
-2. **Install Dependencies**
+2. **Install project dependencies**
 
    Install the required dependencies using either `requirements.txt` or `environment.yml`:
 
