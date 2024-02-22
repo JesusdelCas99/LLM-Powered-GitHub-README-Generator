@@ -6,7 +6,7 @@
 
 1. **Install Ollama**
  
-    Visit the official Ollama website here and follow the instructions to download and install Ollama for your operating system. After installing Ollama, use the following command to download the model of your choice using the provided command, tailored to your preferences and requirements.
+    Visit the official Ollama website (https://ollama.com/download) and follow the instructions to download and install Ollama for your operating system. After installing Ollama, use the following command to download the model of your choice using the provided command, tailored to your preferences and requirements.
 
      ```
      ollama pull <model>
