@@ -55,6 +55,16 @@ Run `main.py` script to generate README file based on `config.file` configuratio
 python main.py
 ```
 
+## Files
+
+Project files and folder structure:
+
+- `/data`: Contains text files storing repository file list and content.
+- `/output`: Stores the generated README file as a text file.
+- `main.py`: Main Python script responsible for README generation.
+- `src/infoToken.py`: Python module for checking GitHub rate limits and calculating time until reset.
+- `src/testConfig.py`: Python module for verifying GitHub tokens, checking repository existence, and Ollama model availability.
+
 ## Acknowledgments
 
 This project utilizes the following libraries and tools:
