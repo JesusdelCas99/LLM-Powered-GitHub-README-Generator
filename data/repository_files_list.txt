@@ -1,10 +1,4 @@
-.github/workflows/deployment.yml
-README.md
-data/ldif/organization.ldif
-data/ldif/users.ldif
-docker-compose.yml
-env/mariadb/mariadb.env
-env/openldap/openldap.env
-env/owncloud/owncloud.env
-env/phpldapadmin/phpldapadmin.env
-init.sh
+config.cfg
+main.py
+src/infoToken.py
+src/testConfig.py

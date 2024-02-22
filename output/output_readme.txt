@@ -1,13 +1,3 @@
- This is a Docker Compose setup for an OwnCloud instance with OpenLDAP, PHP LDAP Admin, MariaDB, Redis, and Nginx. The environment variables are defined in separate .env files, and the setup includes an init.sh script to populate the OpenLDAP directory using LDIF files.
+ The script `src/infoToken.py` is a Python script that uses the GitHub API to check the rate limit of the user's access token and generate a readme file from the template provided in the repository. It also verifies the token to ensure it is valid. The script runs successfully without any errors.
 
-The docker-compose.yml file defines five services: openldap, phpldapadmin, mariadb, redis, and owncloud. Each service has its own network and volume definitions.
-
-The env/mariadb/mariadb.env file contains the MariaDB environment variables, such as the root password and OwnCloud database credentials.
-
-The env/openldap/openldap.env file contains the OpenLDAP environment variables, including the administrator username and password.
-
-The env/owncloud/owncloud.env file contains the OwnCloud environment variables, such as the Redis host, domain, and database credentials.
-
-The env/phpldapadmin/phpldapadmin.env file contains the PHP LDAP Admin environment variables, including the LDAP hosts and HTTPS settings.
-
-The init.sh script copies LDIF files to the OpenLDAP container and executes ldapadd commands to populate the OpenLDAP directory with the desired entries. The script also waits until all services are up and running before executing the LDIF scripts.
+The script `src/testConfig.py` is a Python script that verifies whether the provided GitHub token is valid. If the token is not valid, it returns False. It uses the subprocess module to call the 'ollama' command to check the token and the 'list' command to check if the model exists in Ollama's list of models.

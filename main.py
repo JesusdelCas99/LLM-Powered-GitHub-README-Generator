@@ -88,27 +88,36 @@ if __name__ == "__main__":
     config.read('config.cfg')
 
     # Access configuration values
-    access_token = config['github']['access_token']
-    repository = config['github']['repository']
-    model = config['github']['model']
-    excluded_files = config['excluded']['files'].split(',')
-    excluded_folders = config['excluded']['folders'].split(',')
-    template = config['prompt']['prompt_template']
+    try:
+        excluded_files = config['excluded']['files'].split(',')
+        excluded_folders = config['excluded']['folders'].split(',')
+    except:
+        excluded_files = []
+        excluded_folders = []
+
 
     # Check if access_token, repository, prompt_template and model are empty
-    if not access_token:
+    try:
+        access_token = config['github']['access_token']
+    except:
         print("\033[91mError: Please fill in your Personal Access Token in the config.py file.\033[0m")
         sys.exit()
 
-    if not repository:
+    try:
+        repository = config['github']['repository']
+    except:
         print("\033[91mError: Please specify your GitHub repository in the config.py file.\033[0m")
         sys.exit()
-
-    if not model:
+    
+    try:
+        model = config['github']['model']
+    except:
         print("\033[91mError: Please specify the Ollama model to use in the config.py file.\033[0m")
         sys.exit()
 
-    if not template:
+    try:
+        template = config['prompt']['prompt_template']
+    except:
         print("\033[91mError: Please specify prompt template.\033[0m")
         sys.exit()
 
@@ -117,7 +126,7 @@ if __name__ == "__main__":
     if not is_valid_token(access_token):
         print("\033[91mError: Access token not valid. Please generate a new one.\033[0m")
         sys.exit()
-
+    
     # Check if the provided repository exists
     if not repo_exists(repository):
         print("\033[91mError: Repository name not valid. Try a new one\033[0m")
