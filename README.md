@@ -52,7 +52,7 @@
 Run `main.py` script to generate README file based on `config.file` configuration. This application automatically saves repository content, files list, and README file as text files to the `/data/` and `/output` directories, respectively:
 
 ```
-python main.py
+python ./main.py
 ```
 
 ## Files
