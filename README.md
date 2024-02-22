@@ -16,7 +16,7 @@
    
 3. **Install Dependencies**
 
-   Install the required dependencies using either `requirements.txt` or `environment.yml`. Choose one of the following methods:
+   Install the required dependencies using either `requirements.txt` or `environment.yml`:
 
    - Using `requirements.txt`:
      ```
