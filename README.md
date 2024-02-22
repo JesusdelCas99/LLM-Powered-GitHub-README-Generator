@@ -16,7 +16,7 @@
    - Using `environment.yml`:
      ```
      conda env create -f environment.yml
-     conda activate dapt
+     conda activate readmeEnv
      ```
 2. **Generate GitHub Personal Access Token based on GitHub repository**
 
