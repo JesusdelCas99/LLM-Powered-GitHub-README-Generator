@@ -1,4 +1,4 @@
-# AI-Powered-README-Generator
+# LLM powered README generator for GitHub
  Craft Compelling READMEs: AI-Powered README Generator (Ollama LLM Platform)
 
 
