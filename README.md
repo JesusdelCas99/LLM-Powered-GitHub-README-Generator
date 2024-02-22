@@ -49,7 +49,7 @@
 
 ## Usage
 
-Run the main.py script to generate the README file. The application automatically saves the repository content and files list, as well as the README file, as text files to the `/data/` and `/output directories`, respectively:
+Run `main.py` script to generate the README file. The application automatically saves the repository content and files list, as well as the README file, as text files to the `/data/` and `/output directories`, respectively:
 ```
 python main.py
 ```
