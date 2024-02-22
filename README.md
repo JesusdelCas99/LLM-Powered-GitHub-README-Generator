@@ -2,7 +2,7 @@
  Craft Compelling READMEs: AI-Powered README Generator (Ollama LLM Platform)
 
 
-### Setup
+## Setup
 
 1. **Install Ollama**
  
@@ -37,7 +37,28 @@
 
     Customize `config.cfg` file according to your requirements. Specify the GitHub repository, access token, model (Ollama model), excluded files, excluded folders, and other parameters.
 
-### Acknowledgments
+
+## Configuration
+
+In the `config.cfg` file, you can specify the following parameters:
+
+#### GitHub:
+
+- `access_token`: Your GitHub personal access token.
+- `repository`: The GitHub repository in the format 'username/repository'.
+- `model`: The Ollama model to use for generating README content.
+
+#### Excluded:
+
+- `files`: A comma-separated list of filenames to exclude from combination.
+- `folders`: A comma-separated list of folder names to exclude from combination.
+
+#### Prompt:
+
+- `prompt_template`: The template for the prompt to be used for generating README content. Ensure it contains `{data}` to represent the repository content.
+
+
+## Acknowledgments
 
 This project utilizes the following libraries and tools:
 
