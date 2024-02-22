@@ -47,7 +47,14 @@
    - `prompt_template`: The template for the prompt to be used for generating README content. Ensure it contains `{data}` to represent the repository content.
 
 
-### Acknowledgments
+## Usage
+
+Run the main.py script to generate the README file. The application automatically saves the repository content and files list, as well as the README file, as text files to the `/data/` and `/output directories`, respectively:
+```
+python main.py
+```
+
+## Acknowledgments
 
 This project utilizes the following libraries and tools:
 
