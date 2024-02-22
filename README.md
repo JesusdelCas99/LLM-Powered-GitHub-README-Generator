@@ -4,9 +4,19 @@
 
 ### Setup
 
-1. **Install Dependencies**
+1. **Install Ollama**
+ 
+    Visit the official Ollama website here and follow the instructions to download and install Ollama for your operating system. After installing Ollama, use the following command to download the model of your choice using the provided command, tailored to your preferences and requirements.
 
-   You can install the required dependencies using either `requirements.txt` or `environment.yml`. Choose one of the following methods:
+     ```
+     ollama pull <model>
+     ```
+
+     Replace `<model>` with the name of the Ollama model you want to use from the Ollama model library (https://ollama.com/library) and update `config.cfg`.
+   
+3. **Install Dependencies**
+
+   Install the required dependencies using either `requirements.txt` or `environment.yml`. Choose one of the following methods:
 
    - Using `requirements.txt`:
      ```
@@ -18,13 +28,14 @@
      conda env create -f environment.yml
      conda activate readmeEnv
      ```
-2. **Generate GitHub Personal Access Token based on GitHub repository**
+     
+4. **Generate Personal Access Token**
 
-    Generate a personal access token on GitHub with the necessary permissions (`contents:read`) and update the `config.cfg` file with your access token.
+    Generate Personal Access Token (PAT) with the required permissions (`contents:read`) based on your GitHub repository and update `config.cfg` file with your access token.
 
-3. **Customize `config.cfg file`**
+5. **Configuration**
 
-    Customize  `config.cfg` file according to your requirements. Be sure to provide the following parameters at least: `repository` (GitHub repository), `access_token` (Personal Access Token), `model` (Ollama model) and `prompt_template` (prompt template for LLM). Optionally, parameters such as `folders` (excluded folders) and `files` (excluded files) can be specified based on specific needs.
+    Customize `config.cfg` file according to your requirements. Specify the GitHub repository, access token, model (Ollama model), excluded files, excluded folders, and other parameters.
 
 ### Acknowledgments
 
