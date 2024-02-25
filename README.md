@@ -1,5 +1,14 @@
 # LLM powered README generator for GitHub
- Craft Compelling READMEs: AI-Powered README Generator (Ollama LLM Platform)
+This repository offers a script designed specifically for generating READMEs for GitHub repositories. It utilizes the capabilities of Ollama language models to streamline the process and create informative, engaging descriptions of your projects. The script combines the content of all files within a specified GitHub repository, excluding certain files and folders, and generates a README.md file based on a provided prompt template.
+
+### Key Functionalities:
+
+- **Content Aggregation**: Combines relevant information from various project files (excluding specified folders/files) into a single, cohesive narrative.
+
+- **Prompt-Based Generation**: Allows customization of the README's tone and style by providing a prompt template.
+
+- **Automated Process**: Saves time and effort compared to manual README creation.
+
 
 
 ## Setup and Configuration <!-- -->
