@@ -4,6 +4,8 @@ This repository provides a powerful script tailored for effortlessly generating 
 
 ## Setup and Configuration <!-- -->
 
+Project setup and configuration:
+
 1. **Install Ollama**
 
    Visit the official [Ollama website](https://ollama.com/download) and follow the instructions to download and install Ollama for your operating system. After installing Ollama, use the following command to download the model of your choice:
