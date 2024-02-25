@@ -3,7 +3,7 @@ This repository offers a script designed specifically for generating READMEs for
 
 ### Key Functionalities:
 
-- **Content Aggregation**: Combines relevant information from various project files (excluding specified folders/files) into a single, cohesive narrative.
+- **Content Aggregation**: Combines relevant information from various project files (excluding specified folders/files) into a single, cohesive prompt.
 
 - **Prompt-Based Generation**: Allows customization of the README's tone and style by providing a prompt template.
 
