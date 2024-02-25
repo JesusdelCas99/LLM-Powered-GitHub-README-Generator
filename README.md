@@ -1,5 +1,5 @@
 # LLM powered README generator for GitHub
-This repository provides a powerful script tailored for effortlessly generating READMEs for GitHub repositories. Leveraging the capabilities of Ollama language models, it simplifies the process of crafting informative and engaging project descriptions. The script combines the content of all files within a specified GitHub repository, excluding certain files and folders, and generates a README.md file based on a provided prompt template.
+This repository provides a powerful script tailored for effortlessly generating READMEs for GitHub repositories. Leveraging the capabilities of Ollama language models, it combines the content of all files within a specified GitHub repository, excluding certain files and folders, and generates a README.md file based on a provided prompt template.
 
 ### Key Functionalities:
 
